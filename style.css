@@ -14,6 +14,12 @@ body {
 .navbar {
      /* Adjust the navbar background */
     padding: 10px 0;
+    border-style: solid;
+        border-left-width: 1px !important;
+        border-right-width: 3px !important;
+        border-top-width: 3px !important;
+        border-top-color: #ffb607;
+
 }
 /* .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
