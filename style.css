@@ -2,7 +2,7 @@ General Reset
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 /* Body Styles */
@@ -15,34 +15,27 @@ body {
      /* Adjust the navbar background */
     padding: 10px 0;
     border-style: solid;
-        border-left-width: 1px !important;
-        border-right-width: 3px !important;
+        border-left-width: 0px !important;
+        border-right-width: 0px !important;
         border-top-width: 3px !important;
         border-top-color: #ffb607;
+        border-bottom-width: 3px !important;
+        border-bottom-color: #ffb607;
 
 }
-/* .navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-   color:  #fc95c4;
+.nav-item  .dropdown-item:hover{
+    background-color: #fedd8a;
 }
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #fc95c4;
-} */
- .nav-link:hover{
+.nav-link:hover{
     background-color: rgb(253, 208, 103);
  }
-
 
 /* Social Icon Styles */
 .social-icon-one {
     list-style: none;
     padding: 0;
     margin: 0;
-    color: #1e90ff;
+    
 }
 
 .social-icon-one li {
@@ -73,13 +66,13 @@ body {
 }
 
 /* Navbar collapse button (hamburger) */
-.navbar-toggler {
-    border-color: #fff;
-}
+/* .navbar-toggler {
+    borde
+} */
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     background-color: #fff;
-}
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -98,31 +91,12 @@ body {
     }
 }
 
-
-
-/* Media query for smaller screens (max-width 768px) */
-/* @media (max-width: 768px) {
-    .responsive-logo {
-        width: 100%; 
-        max-width: 600px; 
-    }
-}  */
-
-
 @media (max-width: 480px) {
     .responsive-logo {
         width: 100%; 
         max-width: 400px; 
     }
 } 
-
-
-
-
-
-
-
-
 /* Basic Styles for the container */
 .container-fluid {
     position: relative; /* To manage z-index positioning */
@@ -137,19 +111,11 @@ body {
 }
 
 .menu-1 img {
-    width: 1690px;  /* Make the image fill the container width */
-    height: 600px; /* Make the image fill the container height */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
+    width: 1690px;  
+    height: 600px; 
+    object-fit: cover; 
 }
 
-/* Responsive Styles for tablets and smaller screens (max-width: 768px) */
-/* @media (max-width: 768px) {
-    .menu-1 img {
-        width: 100%;  
-        height: 50%;  
-        object-fit: cover; 
-    }
-} */
 
 /* Responsive Styles for mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
@@ -160,8 +126,7 @@ body {
     }
 }
 
-/* Styles for Menu 2 (Text) */
-/* Default styles for .menu-2 */
+
 .menu-2 {
     position: absolute; /* Position the text on top of the image */
     top: 200px; /* Position from the top of the container */
@@ -172,15 +137,6 @@ body {
     z-index: 2; /* Ensures the text is above the image */
 }
 
-/* Responsive styles for tablets and smaller screens (max-width: 768px) */
-/* @media (max-width: 768px) {
-    .menu-2 {
-        top: 200px; 
-        left: 50%; 
-        transform: translateX(-50%); 
-        font-size: 1.5em; 
-    }
-} */
 
 /* Responsive styles for mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
@@ -201,18 +157,7 @@ h2 {
     font-size: 3em;
 }
 
-/* Responsive Styles using Media Queries */
 
-
-/* @media (max-width: 768px) {
-    h3 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 2.5em;
-    }
-}  */
 
 /* For mobile screens or very small devices (max-width: 480px) */
  @media (max-width: 480px) {
@@ -283,22 +228,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Media Queries */
 
-/* For Tablets (max-width: 768px) */
-/* @media (max-width: 768px) {
-    .container-fluid {
-        padding: 20px; 
-    }
-
-    h1 {
-        font-size: 2em; 
-    }
-
-    p {
-        font-size: 1.1em; 
-    }
-} */
 
 /* For Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
@@ -393,26 +323,7 @@ p {
     color: #f8bd2a;
 }
 
-/* Responsive Media Queries */
 
-/* For Tablets (max-width: 768px) */
-/* @media (max-width: 768px) {
-    .causes-block {
-        margin-bottom: 20px;
-    }
-
-    .causes-block .content h3 {
-        font-size: 1.3em;
-    }
-
-    .causes-block .content .text {
-        font-size: 0.9em;
-    }
-
-    .causes-info {
-        font-size: 1em;
-    }
-} */
 
 /* For Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
@@ -544,38 +455,6 @@ p {
     border: none;
 }
 
-/* Responsive Media Queries */
-
-/* For Tablets (max-width: 768px) */
-/* @media (max-width: 768px) {
-    .contact_taital {
-        font-size: 2em;
-        margin-bottom: 30px;
-    }
-
-    .contact_main {
-        padding: 30px;
-    }
-
-    .email-bt,
-    .massage-bt {
-        font-size: 0.9em;
-    }
-
-    .send_bt a {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-
-    .location_main ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .location_main ul li {
-        margin-bottom: 15px;
-    }
-} */
 
 /* For Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
