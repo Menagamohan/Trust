@@ -1296,6 +1296,7 @@ h1 {
   .container-13 .row {
       flex-direction: column;
       padding: 1px;
+      height: 170px;
   }
 
   .footer__copyright__text p {
